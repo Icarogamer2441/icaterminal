@@ -50,7 +50,7 @@ int main() {
             scanf("%s", command);
             
             if(strcmp(command, "version") == 0){
-                printf("icaterminal v1.4 oficial release\n");
+                printf("icaterminal v1.5\n");
             }
             if(strcmp(command, "exit") == 0){
                 running = 0;
@@ -81,6 +81,7 @@ int main() {
                 printf("main.js\n");
                 printf("print\n");
                 printf("app\n");
+		printf("main.c\n");
             }
             if(strcmp(command, "open") == 0){
                 char url[200];
@@ -237,6 +238,9 @@ int main() {
                     }
                 }
             }
+	    if(strcmp(command,"main.c") == 0){
+		system("gcc -o program main.c");
+	    }
         } else {
             if(tamanhoAtual > limite){
                 printf("Storage limit reached. Cannot perform more operations.\n");
