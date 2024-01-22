@@ -79,7 +79,7 @@ int main() {
             scanf("%s", command);
             
             if(strcmp(command, "version") == 0){
-                printf("icaterminal v1.6\n");
+                printf("icaterminal v1.7\n");
             }
             if(strcmp(command, "exit") == 0){
                 running = 0;
@@ -235,6 +235,7 @@ int main() {
             if(strcmp(command,"help2") == 0){
                 printf("memorydebug\n");
                 printf("maxmemorydebug\n");
+                printf("losememory\n");
             }
             if(strcmp(command,"app") == 0){
                 int runapp = 1;
@@ -257,10 +258,10 @@ int main() {
                             printf("About: this game is my own OS (operating system) and i made him in C\n");
                         }
                         if(strcmp(question,"creator") == 0){
-                            printf("Creator: josé icaro\n");
+                            printf("Creator: jose icaro\n");
                         }
                         if(strcmp(question,"version") == 0){
-                            printf("Version: 1.6\n");
+                            printf("Version: 1.7\n");
                         }
                         if(strcmp(question,"exit") == 0){
                             runapp = 0;
@@ -300,6 +301,18 @@ int main() {
                 printf("@@@@@@@@@@@&#5YYY????????????????????????~:?JY5#&@@@@@@@@@@@\n");
                 printf("@@@@@@@@@@@@@&&&#55555J??????????????J555YY#&&&@@@@@@@@@@@@@\n");
                 printf("@@@@@@@@@@@@@@@@@&&&&&G55555555555555G&&&&&@@@@@@@@@@@@@@@@@\n");
+            }
+            if(strcmp(command,"losememory") == 0){
+                int *times;
+                printf("how much memory you want to lose? (use numbers): ");
+                scanf("%d",times);
+                
+                for(int i = 0; i < *times; i++){
+                    fprintf(arq,"l");
+                    fseek(arq, 0, SEEK_END);
+                    long tamanhoAtual = ftell(arq);
+                    fseek(arq, 0, SEEK_SET);
+                }
             }
         } else {
             if(tamanhoAtual > limite){
