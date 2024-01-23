@@ -4,38 +4,17 @@
 
 int main() {
     FILE *arq;
-    
+
     int running = 1;
-    
-    printf("@@@@@@@@@@@@@@@@@&&&&&G55555555555555G&&&&&@@@@@@@@@@@@@@@@@\n");
-    printf("@@@@@@@@@@@@@&&&#55555J??????????????J55555#&&&@@@@@@@@@@@@@\n");
-    printf("@@@@@@@@@@@&#5YYY??????????????????????????YYY5#&@@@@@@@@@@@\n");
-    printf("@@@@@@@@@&#5J???????YGY?5GGGGGGP?????YGY???????J5B#@@@@@@@@@\n");
-    printf("@@@@@@@#BJ!?????????P@G?B@GPPPP5???YBGPGBY???????J5B#@@@@@@@\n");
-    printf("@@@@@#GJ~^:7????????5@G?B@Y????????P@&B&@5?????????J5G#@@@@@\n");
-    printf("@@@&P5J!:^:7????????P@G?B@5JJJJJ?Y&GJYYYJB&J??????????5P&@@@\n");
-    printf("@@&#5Y?!:^:7????????5&P?G&#####B?Y&G?????B&J??????????Y5#&@@\n");
-    printf("@&P5???!:::7???????????????JJJJ?????????????????????????5P&@\n");
-    printf("@&P5???!:~~7?7!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!7?????5P&@\n");
-    printf("BBYJ???!:7???^::::::::::::::::::::::::::::::::::::~?????JYBB\n");
-    printf("55?????!:!???5PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP5???????55\n");
-    printf("55??????7????&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B???????55\n");
-    printf("55???????????&@@#~7&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@P^~~^^^^YP\n");
-    printf("PY^^^~777????&@@@&G~JB#@@@@@@@@@@@@@@@@@@@@@@@@@@@B7??~^^^YP\n");
-    printf("PY~~~~~~~7???&@@@@&PJ~P@@@@@@@@@@@@@@@@@@@@@@@@@@@B???????55\n");
-    printf("55???????????&@@&5J!5@BYYYYYY5@@@@@@@@@@@@@@@@@@@@B???????55\n");
-    printf("BBYJ?????????&@@&?5@@@G??????J&@@@@@@@@@@@@@@@@@@@B?????JYBB\n");
-    printf("@&P5?????????&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B?????5P&@\n");
-    printf("@&P5?????????YYYYYYYYYYYYYYYYYYYYYYYYYYY5?7Y5YYYY5Y?????5P&@\n");
-    printf("@@&#5Y???????????????????????????????????^:7??????????Y5#&@@\n");
-    printf("@@@&P5???????????????????????????????????~:^^?????????5P&@@@\n");
-    printf("@@@@@#G5J????????????????????????????????~::^??????J5G#@@@@@\n");
-    printf("@@@@@@@#B5J??????????????????????????????~:^^????J5B#@@@@@@@\n");
-    printf("@@@@@@@@@#B5J????????????????????????????~::^??J5B#@@@@@@@@@\n");
-    printf("@@@@@@@@@@@&#5YYY????????????????????????~:?JY5#&@@@@@@@@@@@\n");
-    printf("@@@@@@@@@@@@@&&&#55555J??????????????J555YY#&&&@@@@@@@@@@@@@\n");
-    printf("@@@@@@@@@@@@@@@@@&&&&&G55555555555555G&&&&&@@@@@@@@@@@@@@@@@\n");
-    
+
+    printf("@@@@@@@@@@@@@@@@@@@@@@@BBBBBBBBBBBBBBBB@@@@@@@@@@@@@@@@@@@@@@@\n");
+    printf("@@@@@@@@@@@@@@@@@#GBBGG5YYYYYYYYYYYYYY5BBBBG#@@@@@@@@@@@@@@@@@\n");
+    printf("@@@@@@@@@@@@@#GGG5YYYPPYYYYYYYYYYYYYYYYYYYYY5GGG#@@@@@@@@@@@@@\n");
+    printf("@@@@@@@@@@&#G5YYYYYYYGB5YPGGGGGGGYYYYYYGPYYYYYYY5G#&@@@@@@@@@@\n");
+    printf("@@@@@@@@&#P5YYYYYYYYYPG5Y&@BBBBBBYYY5GGBBGPYYYYYYY5P#&@@@@@@@@\n");
+    printf("@@@@@@&#P5YYYYYYYYYYY#@PY&@5YYYYYYYY5@@B#@#JYYYYYYYY5P#&@@@@@@\n");
+    printf("@@@@##55YYYYYYYYYYYYY#@PY&@5YYYYYY5#BPPGGPG#GYYYYYYYYY55##@@@@\n@@@@BGYYYYYYYYYYYYYYY#@PY&@######Y5@&YYYYYP@BYYYYYYYYYYYGB@@@@\n@@#B55YYYYYYYYYYYYYYYY5YY55555555YY55YYYYYY5YYYYYYYYYYYY55B#@@\n@@#BYYYYYYYJ?????????77??77777777??77??????7????????JYYYYYB#@@\n@&BGYYYYYYYP@&&#G#@&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&@PYYYYYGB&@\n#BYYYYYYYYYG@@@5^JG&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYB#\nBBYYYYYYYYYG@@@@@5!Y5#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@@@BY?7B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBBn\nBBYYYYYYYYYG@@@G???B@@@5??????????Y@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@GJB@@@@@PYYYYYYYYYY5@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@GJB@@@@@PYYYYYYYYYY5@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBB\n#BYYYYYYYYYG@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYB#\n@&BGYYYYYYYY55PPP5555555555PPPP555555555555555555555YYYYYYGB&@\n@@#BYYYYYYYYYP&##G5YYYYYYY5####5YYYYYYYYYYYYYYYYYYYYYYYYYYB#@@\n@@#B55YYYYYYYYY5PB&PYYYYY#@5YY5&&YYYYYYYYYYYYYYYYYYYYYYY55B#@@\n@@@@BGYYYYYYY5PG#PYYYYYYY&@5YYY@@YYYYYYYYYYYYYYYYYYYYYYYGB@@@@\n@@@@##55YYYYYG@#PGG5YPG5YB#GGGG#BYYYYYYYYYYYYYYYYYYYYY55##@@@@\n@@@@@@&#P5YYYPBBBBBPYGB5YYYGBBBYYYYYYYYYYYYYYYYYYYYY5P#&@@@@@@\n@@@@@@@@&#P5YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY5P#&@@@@@@@@\n@@@@@@@@@@&#G5YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY5G#&@@@@@@@@@@\n@@@@@@@@@@@@@#GGG5YYYYYYYYYYYYYYYYYYYYYYYYYY5GGG#@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@#GBBBB5YYYYYYYYYYYYYY5BBBBG#@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@BBBBBBBBBBBBBBBB@@@@@@@@@@@@@@@@@@@@@@@\n");
+
     char username[100];
     printf("what's your name?: ");
     scanf("%s", username);
@@ -45,19 +24,19 @@ int main() {
     char additional[100];
     printf("do you want to add aditional things? [y/n]: ");
     scanf("%s", additional);
-    
+
     if(limite > 100000){
         printf("you cant use more than 100.000 of memory, beacuse of this, the game will re-use 100.000 of memory");
         limite = 100000;
     }
-    
+
     arq = fopen("memory.txt", "a");
-    
+
     if (arq == NULL) {
         perror("Error opening file");
         return 1;
     }
-    
+
     if(strcmp(additional,"y") == 0){
         fprintf(arq,"loaded all commands\n");
         fprintf(arq,"loaded all functions for the commands\n");
@@ -67,19 +46,19 @@ int main() {
     } else {
         printf("okay, now you can use with 0 of space used!");
     }
-    
+
     fseek(arq, 0, SEEK_END);
     long tamanhoAtual = ftell(arq);
     fseek(arq, 0, SEEK_SET);
-    
+
     while(running){
         if(tamanhoAtual <= limite){
             char command[100];
             printf("\n%s > ", username);
             scanf("%s", command);
-            
+
             if(strcmp(command, "version") == 0){
-                printf("icaterminal v1.7\n");
+                printf("icaterminal v2.0\n");
             }
             if(strcmp(command, "exit") == 0){
                 running = 0;
@@ -87,8 +66,8 @@ int main() {
             if(strcmp(command, "write-on-memory") == 0){
                 char content[200];
                 scanf("%s\n", content);
-                fprintf(arq, "\n%s", content);
-                
+                fprintf(arq, "\n%s;", content);
+
                 fseek(arq, 0, SEEK_END);
                 long tamanhoAtual = ftell(arq);
                 fseek(arq, 0, SEEK_SET);
@@ -110,8 +89,9 @@ int main() {
                 printf("main.js\n");
                 printf("print\n");
                 printf("app\n");
-		        printf("main.c\n");
+            printf("main.c\n");
                 printf("logo\n");
+                printf("makeversion\n");
             }
             if(strcmp(command, "open") == 0){
                 char url[200];
@@ -129,7 +109,7 @@ int main() {
                 snprintf(comando_final, sizeof(comando_final), comando, url);
 
                 system(comando_final);
-                fprintf(arq, "\nopened url: %s", url);
+                fprintf(arq, "\nopened url: %s!", url);
                 fseek(arq, 0, SEEK_END);
                 long tamanhoAtual = ftell(arq);
                 fseek(arq, 0, SEEK_SET);
@@ -145,7 +125,7 @@ int main() {
                 #endif
 
                 system(comando);
-                fprintf(arq, "\nterminal cleared");
+                fprintf(arq, "\nterminal cleared!");
                 fseek(arq, 0, SEEK_END);
                 long tamanhoAtual = ftell(arq);
                 fseek(arq, 0, SEEK_SET);
@@ -155,7 +135,7 @@ int main() {
                 printf("important link url: ");
                 scanf("%s", url);
 
-                fprintf(arq, "\nimportant link: %s", url);
+                fprintf(arq, "\nimportant link: %s;", url);
                 fseek(arq, 0, SEEK_END);
                 long tamanhoAtual = ftell(arq);
                 fseek(arq, 0, SEEK_SET);
@@ -168,19 +148,19 @@ int main() {
             }
             if(strcmp(command,"createfile") == 0){
                 FILE *file;
-                
+
                 char filename[500];
                 printf("file name and extension: ");
                 scanf("%s\n", filename);
-                
+
                 file = fopen(filename, "a");
-                
+
                 char content[500];
                 printf("file content: ");
                 scanf("%s\n",content);
-                
+
                 fprintf(file,"%s\n",content);
-                
+
                 fclose(file);
             }
             if(strcmp(command,"main.py") == 0){
@@ -196,24 +176,24 @@ int main() {
             }
             if(strcmp(command,"reset") == 0){
                 fclose(arq);
-                
+
                 arq = fopen("memory.txt", "w");
-                
+
                 fprintf(arq,"");
-                
+
                 fclose(arq);
-                
+
                 arq = fopen("memory.txt", "a");
             }
             if(strcmp(command,"resetclose") == 0){
                 fclose(arq);
-                
+
                 arq = fopen("memory.txt", "w");
-                
+
                 fprintf(arq,"");
-                
+
                 fclose(arq);
-                
+
                 arq = fopen("memory.txt", "a");
                 running = 0;
             }
@@ -261,7 +241,7 @@ int main() {
                             printf("Creator: jose icaro\n");
                         }
                         if(strcmp(question,"version") == 0){
-                            printf("Version: 1.7\n");
+                            printf("Version: 2.0\n");
                         }
                         if(strcmp(question,"exit") == 0){
                             runapp = 0;
@@ -273,46 +253,32 @@ int main() {
                 system("gcc -o program main.c");
             }
             if(strcmp(command,"logo") == 0){
-                printf("@@@@@@@@@@@@@@@@@&&&&&G55555555555555G&&&&&@@@@@@@@@@@@@@@@@\n");
-                printf("@@@@@@@@@@@@@&&&#55555J??????????????J55555#&&&@@@@@@@@@@@@@\n");
-                printf("@@@@@@@@@@@&#5YYY??????????????????????????YYY5#&@@@@@@@@@@@\n");
-                printf("@@@@@@@@@&#5J???????YGY?5GGGGGGP?????YGY???????J5B#@@@@@@@@@\n");
-                printf("@@@@@@@#BJ!?????????P@G?B@GPPPP5???YBGPGBY???????J5B#@@@@@@@\n");
-                printf("@@@@@#GJ~^:7????????5@G?B@Y????????P@&B&@5?????????J5G#@@@@@\n");
-                printf("@@@&P5J!:^:7????????P@G?B@5JJJJJ?Y&GJYYYJB&J??????????5P&@@@\n");
-                printf("@@&#5Y?!:^:7????????5&P?G&#####B?Y&G?????B&J??????????Y5#&@@\n");
-                printf("@&P5???!:::7???????????????JJJJ?????????????????????????5P&@\n");
-                printf("@&P5???!:~~7?7!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!7?????5P&@\n");
-                printf("BBYJ???!:7???^::::::::::::::::::::::::::::::::::::~?????JYBB\n");
-                printf("55?????!:!???5PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP5???????55\n");
-                printf("55??????7????&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B???????55\n");
-                printf("55???????????&@@#~7&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@P^~~^^^^YP\n");
-                printf("PY^^^~777????&@@@&G~JB#@@@@@@@@@@@@@@@@@@@@@@@@@@@B7??~^^^YP\n");
-                printf("PY~~~~~~~7???&@@@@&PJ~P@@@@@@@@@@@@@@@@@@@@@@@@@@@B???????55\n");
-                printf("55???????????&@@&5J!5@BYYYYYY5@@@@@@@@@@@@@@@@@@@@B???????55\n");
-                printf("BBYJ?????????&@@&?5@@@G??????J&@@@@@@@@@@@@@@@@@@@B?????JYBB\n");
-                printf("@&P5?????????&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B?????5P&@\n");
-                printf("@&P5?????????YYYYYYYYYYYYYYYYYYYYYYYYYYY5?7Y5YYYY5Y?????5P&@\n");
-                printf("@@&#5Y???????????????????????????????????^:7??????????Y5#&@@\n");
-                printf("@@@&P5???????????????????????????????????~:^^?????????5P&@@@\n");
-                printf("@@@@@#G5J????????????????????????????????~::^??????J5G#@@@@@\n");
-                printf("@@@@@@@#B5J??????????????????????????????~:^^????J5B#@@@@@@@\n");
-                printf("@@@@@@@@@#B5J????????????????????????????~::^??J5B#@@@@@@@@@\n");
-                printf("@@@@@@@@@@@&#5YYY????????????????????????~:?JY5#&@@@@@@@@@@@\n");
-                printf("@@@@@@@@@@@@@&&&#55555J??????????????J555YY#&&&@@@@@@@@@@@@@\n");
-                printf("@@@@@@@@@@@@@@@@@&&&&&G55555555555555G&&&&&@@@@@@@@@@@@@@@@@\n");
+                printf("@@@@@@@@@@@@@@@@@@@@@@@BBBBBBBBBBBBBBBB@@@@@@@@@@@@@@@@@@@@@@@\n");
+                printf("@@@@@@@@@@@@@@@@@#GBBGG5YYYYYYYYYYYYYY5BBBBG#@@@@@@@@@@@@@@@@@\n");
+                printf("@@@@@@@@@@@@@#GGG5YYYPPYYYYYYYYYYYYYYYYYYYYY5GGG#@@@@@@@@@@@@@\n");
+                printf("@@@@@@@@@@&#G5YYYYYYYGB5YPGGGGGGGYYYYYYGPYYYYYYY5G#&@@@@@@@@@@\n");
+                printf("@@@@@@@@&#P5YYYYYYYYYPG5Y&@BBBBBBYYY5GGBBGPYYYYYYY5P#&@@@@@@@@\n");
+                printf("@@@@@@&#P5YYYYYYYYYYY#@PY&@5YYYYYYYY5@@B#@#JYYYYYYYY5P#&@@@@@@\n");
+                printf("@@@@##55YYYYYYYYYYYYY#@PY&@5YYYYYY5#BPPGGPG#GYYYYYYYYY55##@@@@\n@@@@BGYYYYYYYYYYYYYYY#@PY&@######Y5@&YYYYYP@BYYYYYYYYYYYGB@@@@\n@@#B55YYYYYYYYYYYYYYYY5YY55555555YY55YYYYYY5YYYYYYYYYYYY55B#@@\n@@#BYYYYYYYJ?????????77??77777777??77??????7????????JYYYYYB#@@\n@&BGYYYYYYYP@&&#G#@&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&@PYYYYYGB&@\n#BYYYYYYYYYG@@@5^JG&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYB#\nBBYYYYYYYYYG@@@@@5!Y5#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@@@BY?7B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBBn\nBBYYYYYYYYYG@@@G???B@@@5??????????Y@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@GJB@@@@@PYYYYYYYYYY5@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@GJB@@@@@PYYYYYYYYYY5@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBB\n#BYYYYYYYYYG@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYB#\n@&BGYYYYYYYY55PPP5555555555PPPP555555555555555555555YYYYYYGB&@\n@@#BYYYYYYYYYP&##G5YYYYYYY5####5YYYYYYYYYYYYYYYYYYYYYYYYYYB#@@\n@@#B55YYYYYYYYY5PB&PYYYYY#@5YY5&&YYYYYYYYYYYYYYYYYYYYYYY55B#@@\n@@@@BGYYYYYYY5PG#PYYYYYYY&@5YYY@@YYYYYYYYYYYYYYYYYYYYYYYGB@@@@\n@@@@##55YYYYYG@#PGG5YPG5YB#GGGG#BYYYYYYYYYYYYYYYYYYYYY55##@@@@\n@@@@@@&#P5YYYPBBBBBPYGB5YYYGBBBYYYYYYYYYYYYYYYYYYYYY5P#&@@@@@@\n@@@@@@@@&#P5YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY5P#&@@@@@@@@\n@@@@@@@@@@&#G5YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY5G#&@@@@@@@@@@\n@@@@@@@@@@@@@#GGG5YYYYYYYYYYYYYYYYYYYYYYYYYY5GGG#@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@#GBBBB5YYYYYYYYYYYYYY5BBBBG#@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@BBBBBBBBBBBBBBBB@@@@@@@@@@@@@@@@@@@@@@@\n");
             }
             if(strcmp(command,"losememory") == 0){
                 int *times;
                 printf("how much memory you want to lose? (use numbers): ");
                 scanf("%d",times);
-                
+
                 for(int i = 0; i < *times; i++){
                     fprintf(arq,"l");
                     fseek(arq, 0, SEEK_END);
                     long tamanhoAtual = ftell(arq);
                     fseek(arq, 0, SEEK_SET);
                 }
+            }
+            if(strcmp(command,"makeversion") == 0){
+                printf("do you want to make your own icaterminal version? see our github repository!\n");
+                printf("to make your own icaterminal version, you need to make an text image (or ascii) to become the version logo\n");
+                printf("name your version. example: myversion icaterminal\n(you need to put icaterminal in the name, for everyone know that is an icaterminal custom version)\n and put the version number (create your own version number)\n");
+                printf("github repo: https://github.com/Icarogamer2441/icaterminal\n");
+                printf("remember! you need to know how to code in the programming language C!\n");
             }
         } else {
             if(tamanhoAtual > limite){
@@ -321,8 +287,8 @@ int main() {
             }
         }
     }
-    
+
     fclose(arq);
-    
+
     return 0;
 }
