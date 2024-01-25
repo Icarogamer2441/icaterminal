@@ -2,6 +2,34 @@
 #include <string.h>
 #include <stdlib.h>
 
+void chatBot(){
+	int chat = 1;
+	while(chat){
+		char question[100];
+		printf("use numbers of 1 to 5 to ask something to the bot: ");
+		scanf("%s",question);
+		if(strcmp(question,"1") == 0){
+			printf("chatbot: you can create your own icaterminal version using this version or the other versions!, just use the command 'makeversion' to see an tutorial of how to make your own icaterminal version\n");
+		} else if(strcmp(question,"2") == 0){
+			char exit[100];
+			printf("chatbot: you really want to exit? y/n: ");
+			scanf("%s",exit);
+			if(strcmp(exit, "y") == 0){
+				printf("back to icaterminal");
+				chat = 0;
+			} else {
+				printf("");
+			}
+		} else if(strcmp(question,"3") == 0){
+			printf("chatbot: you can use an AI to make an icaterminal version!");
+		} else if(strcmp(question,"4") == 0){
+			printf("chatbot: yes! this OS was made using Clang");
+		} else if(strcmp(question,"5") == 0){
+			printf("chatbot: use help2 to see secret commands!");
+		}
+	}
+}
+
 int main() {
     FILE *arq;
     
@@ -57,7 +85,7 @@ int main() {
             scanf("%s", command);
             
             if(strcmp(command, "version") == 0){
-                printf("icaterminal v2.3\n");
+                printf("icaterminal v2.4\n");
             }
             if(strcmp(command, "exit") == 0){
                 running = 0;
@@ -88,14 +116,14 @@ int main() {
                 printf("main.js\n");
                 printf("print\n");
                 printf("app\n");
-	        printf("main.c\n");
+				printf("main.c\n");
                 printf("logo\n");
                 printf("makeversion\n");
-	        printf("changename\n");
-		printf("imensy\n");
-		printf("toretori\n");
-		printf("addedthings\n");
-		printf("kill\n");
+				printf("changename\n");
+				printf("imensy\n");
+				printf("toretori\n");
+				printf("addedthings\n");
+				printf("kill\n");
             }
             if(strcmp(command, "open") == 0){
                 char url[200];
@@ -226,6 +254,7 @@ int main() {
                 char appname[500];
                 printf("apps:\n");
                 printf("search\n");
+                printf("chatbot\n");
                 printf("app name: ");
                 scanf("%s",appname);
                 if(strcmp(appname,"search") == 0){
@@ -245,13 +274,15 @@ int main() {
                             printf("Creator: jose icaro\n");
                         }
                         if(strcmp(question,"version") == 0){
-                            printf("Version: 2.3\n");
+                            printf("Version: 2.4\n");
                         }
                         if(strcmp(question,"exit") == 0){
                             runapp = 0;
                         }
                     }
-                }
+                } else if(strcmp(appname,"chatbot") == 0){
+						chatBot();
+				}
             }
             if(strcmp(command,"main.c") == 0){
                 system("gcc -o program main.c");
@@ -291,29 +322,29 @@ int main() {
 		    printf("name sucefully set!");
 		    fprintf(arq,"new name!");
 	        }
-		if(strcmp(command,"imensy") == 0){
-		  printf("imensy is an brazilian streamer, he (or she) is lgbtq+\n");
-		  printf("imensy twitch link: https://www.twitch.tv/imensy_\n");
-		}
-		if(strcmp(command,"toretori") == 0){
-		    printf("toretori is an brazilian streamer\n");
-		    printf("toretori twitch link: https://www.twitch.tv/toretori\n");
-		}
-		if(strcmp(command,"addedthings") == 0){
-		    printf("in this update has been added:\n");
-		    printf("command: addedthings\n");
-		    printf("command: kill\n");
-		}
-		if(strcmp(command,"kill") == 0){
-		    system("clear") || system("cls");
-		    printf("@@@@@@@@@@@@@@@@@@@@@@@BBBBBBBBBBBBBBBB@@@@@@@@@@@@@@@@@@@@@@@\n");
-		    printf("@@@@@@@@@@@@@@@@@#GBBGG5YYYYYYYYYYYYYY5BBBBG#@@@@@@@@@@@@@@@@@\n");
-	            printf("@@@@@@@@@@@@@#GGG5YYYPPYYYYYYYYYYYYYYYYYYYYY5GGG#@@@@@@@@@@@@@\n");
-		    printf("@@@@@@@@@@&#G5YYYYYYYGB5YPGGGGGGGYYYYYYGPYYYYYYY5G#&@@@@@@@@@@\n");
-		    printf("@@@@@@@@&#P5YYYYYYYYYPG5Y&@BBBBBBYYY5GGBBGPYYYYYYY5P#&@@@@@@@@\n");
-		    printf("@@@@@@&#P5YYYYYYYYYYY#@PY&@5YYYYYYYY5@@B#@#JYYYYYYYY5P#&@@@@@@\n");
-		    printf("@@@@##55YYYYYYYYYYYYY#@PY&@5YYYYYY5#BPPGGPG#GYYYYYYYYY55##@@@@\n@@@@BGYYYYYYYYYYYYYYY#@PY&@######Y5@&YYYYYP@BYYYYYYYYYYYGB@@@@\n@@#B55YYYYYYYYYYYYYYYY5YY55555555YY55YYYYYY5YYYYYYYYYYYY55B#@@\n@@#BYYYYYYYJ?????????77??77777777??77??????7????????JYYYYYB#@@\n@&BGYYYYYYYP@&&#G#@&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&@PYYYYYGB&@\n#BYYYYYYYYYG@@@5^JG&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYB#\nBBYYYYYYYYYG@@@@@5!Y5#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@@@BY?7B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBBn\nBBYYYYYYYYYG@@@G???B@@@5??????????Y@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@GJB@@@@@PYYYYYYYYYY5@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@GJB@@@@@PYYYYYYYYYY5@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBB\n#BYYYYYYYYYG@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYB#\n@&BGYYYYYYYY55PPP5555555555PPPP555555555555555555555YYYYYYGB&@\n@@#BYYYYYYYYYP&##G5YYYYYYY5####5YYYYYYYYYYYYYYYYYYYYYYYYYYB#@@\n@@#B55YYYYYYYYY5PB&PYYYYY#@5YY5&&YYYYYYYYYYYYYYYYYYYYYYY55B#@@\n@@@@BGYYYYYYY5PG#PYYYYYYY&@5YYY@@YYYYYYYYYYYYYYYYYYYYYYYGB@@@@\n@@@@##55YYYYYG@#PGG5YPG5YB#GGGG#BYYYYYYYYYYYYYYYYYYYYY55##@@@@\n@@@@@@&#P5YYYPBBBBBPYGB5YYYGBBBYYYYYYYYYYYYYYYYYYYYY5P#&@@@@@@\n@@@@@@@@&#P5YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY5P#&@@@@@@@@\n@@@@@@@@@@&#G5YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY5G#&@@@@@@@@@@\n@@@@@@@@@@@@@#GGG5YYYYYYYYYYYYYYYYYYYYYYYYYY5GGG#@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@#GBBBB5YYYYYYYYYYYYYY5BBBBG#@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@BBBBBBBBBBBBBBBB@@@@@@@@@@@@@@@@@@@@@@@\n");
-	    }
+			if(strcmp(command,"imensy") == 0){
+			  printf("imensy is an brazilian streamer, he (or she) is lgbtq+\n");
+			  printf("imensy twitch link: https://www.twitch.tv/imensy_\n");
+			}
+			if(strcmp(command,"toretori") == 0){
+				printf("toretori is an brazilian streamer\n");
+				printf("toretori twitch link: https://www.twitch.tv/toretori\n");
+			}
+			if(strcmp(command,"addedthings") == 0){
+				printf("in this update has been added:\n");
+				printf("command: addedthings\n");
+				printf("command: kill\n");
+			}
+			if(strcmp(command,"kill") == 0){
+				system("clear") || system("cls");
+				printf("@@@@@@@@@@@@@@@@@@@@@@@BBBBBBBBBBBBBBBB@@@@@@@@@@@@@@@@@@@@@@@\n");
+				printf("@@@@@@@@@@@@@@@@@#GBBGG5YYYYYYYYYYYYYY5BBBBG#@@@@@@@@@@@@@@@@@\n");
+				printf("@@@@@@@@@@@@@#GGG5YYYPPYYYYYYYYYYYYYYYYYYYYY5GGG#@@@@@@@@@@@@@\n");
+				printf("@@@@@@@@@@&#G5YYYYYYYGB5YPGGGGGGGYYYYYYGPYYYYYYY5G#&@@@@@@@@@@\n");
+				printf("@@@@@@@@&#P5YYYYYYYYYPG5Y&@BBBBBBYYY5GGBBGPYYYYYYY5P#&@@@@@@@@\n");
+				printf("@@@@@@&#P5YYYYYYYYYYY#@PY&@5YYYYYYYY5@@B#@#JYYYYYYYY5P#&@@@@@@\n");
+				printf("@@@@##55YYYYYYYYYYYYY#@PY&@5YYYYYY5#BPPGGPG#GYYYYYYYYY55##@@@@\n@@@@BGYYYYYYYYYYYYYYY#@PY&@######Y5@&YYYYYP@BYYYYYYYYYYYGB@@@@\n@@#B55YYYYYYYYYYYYYYYY5YY55555555YY55YYYYYY5YYYYYYYYYYYY55B#@@\n@@#BYYYYYYYJ?????????77??77777777??77??????7????????JYYYYYB#@@\n@&BGYYYYYYYP@&&#G#@&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&@PYYYYYGB&@\n#BYYYYYYYYYG@@@5^JG&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYB#\nBBYYYYYYYYYG@@@@@5!Y5#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@@@BY?7B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBBn\nBBYYYYYYYYYG@@@G???B@@@5??????????Y@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@GJB@@@@@PYYYYYYYYYY5@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@GJB@@@@@PYYYYYYYYYY5@@@@@@@@@@@@@@@@@PYYYYYYYBB\nBBYYYYYYYYYG@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYBB\n#BYYYYYYYYYG@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYYYYYYYB#\n@&BGYYYYYYYY55PPP5555555555PPPP555555555555555555555YYYYYYGB&@\n@@#BYYYYYYYYYP&##G5YYYYYYY5####5YYYYYYYYYYYYYYYYYYYYYYYYYYB#@@\n@@#B55YYYYYYYYY5PB&PYYYYY#@5YY5&&YYYYYYYYYYYYYYYYYYYYYYY55B#@@\n@@@@BGYYYYYYY5PG#PYYYYYYY&@5YYY@@YYYYYYYYYYYYYYYYYYYYYYYGB@@@@\n@@@@##55YYYYYG@#PGG5YPG5YB#GGGG#BYYYYYYYYYYYYYYYYYYYYY55##@@@@\n@@@@@@&#P5YYYPBBBBBPYGB5YYYGBBBYYYYYYYYYYYYYYYYYYYYY5P#&@@@@@@\n@@@@@@@@&#P5YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY5P#&@@@@@@@@\n@@@@@@@@@@&#G5YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY5G#&@@@@@@@@@@\n@@@@@@@@@@@@@#GGG5YYYYYYYYYYYYYYYYYYYYYYYYYY5GGG#@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@#GBBBB5YYYYYYYYYYYYYY5BBBBG#@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@BBBBBBBBBBBBBBBB@@@@@@@@@@@@@@@@@@@@@@@\n");
+			}
         } else {
             if(tamanhoAtual > limite){
                 printf("Storage limit reached. Cannot perform more operations.\n");
