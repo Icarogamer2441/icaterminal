@@ -299,7 +299,7 @@ int main() {
             if(strcmp(command,"losememory") == 0){
                 int *times;
                 printf("how much memory you want to lose? (use numbers): ");
-                scanf("%d",times);
+                scanf("%d",&times);
                 
                 for(int i = 0; i < *times; i++){
                     fprintf(arq,"l");
